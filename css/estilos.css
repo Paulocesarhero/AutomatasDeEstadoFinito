@@ -1,0 +1,28 @@
+#header {
+    background: linear-gradient(180deg, #000948 0%, #321B5E 100%);
+    color: white;
+}
+
+.main {
+    background-color: #311458;
+    color: white;
+}
+
+.color1 {
+    border-radius: 12px;
+    background: #443da8;
+    color: #fff;
+}
+
+aside {
+    background: #24385b;
+    border-radius: 12px;
+    color: white;
+}
+
+footer {
+    background: #16a085;
+    background: linear-gradient(180deg, #000948 0%, #6f4cb1 100%);
+    color: white;
+
+}

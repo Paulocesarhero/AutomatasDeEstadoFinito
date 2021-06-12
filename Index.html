@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="Mx">
+<head>
+    <meta charset="UTF-8">
+    <title>Automatas de estado Finito</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<!--Header-->
+    <header>
+        <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Automatas de estado Finito</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#Definicion">Definicion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Ejemplos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+<!--/Header-->
+
+<!--Body-->
+<body>
+    <section class="main">
+        <div class="container">
+            <div class="row" href="#Definicion" >
+                <div class="col-12 col-lg text-center">
+                    <article class="color1">
+                        <p>
+                            Un automata de estado finito es una maquina de estado finito donde los símbolos de salida son 0 y 1, además de el estado actual determina la ultima salida.
+                            Los estados para los cuales la ultima salida es 1 se les llama estados de aceptación
+                        </p>
+                    </article>
+                </div>
+                <div class="col-12 col-lg">
+                    <aside>
+                        <ul>
+                            <li>
+                                conjunto finito de símbolos entrada <var>I</var>
+                            </li>
+                            <li>
+                                Conjunto finito símbolos salida <var>o</var>
+                            </li>
+                            <li>
+                                Conjunto finito estados <var>S</var>
+                            </li>
+                            <li>
+                                Una función de estado siguiente <var>f:SxI→S</var>
+                            </li>
+                            <li>
+                                Una función de salida <var>G:SxI→O</var>
+                            </li>
+                            <li>
+                                Un estado inicial <var>So</var>
+                            </li>
+
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg text-center">
+                    <article class="color1">
+                        <p>
+                            Como podremos darnos cuenta en el siguiente ejemplo este automata que acepta solo cadenas
+                            del conjunto A={a,b,c} que contenga numero impar de a's
+                        </p>
+                        <h2>Intetalo tu mismo agrega letras del conjunto A en el siguiente apartado</h2>
+                        <div class="input-group mb-3">
+                            <select class="form-select" id="inputGroupSelect01">
+                                <option value="1">a</option>
+                                <option value="2">b</option>
+                                <option value="3">c</option>
+                            </select>
+                            <button type="button" class="btn btn-outline-secondary" id="agregarLetra">Agregar letra</button>
+                            <span class="visually-hidden">Toggle Dropdown</span>
+                            <input type="text" class="form-control" aria-label="Text input with segmented dropdown button" disabled id="cadena">
+                        </div>
+
+                    </article>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btn-check-outlined">Empezar diagrama de transición</label><br>
+                </div>
+                <div class="col-12 col-lg">
+                    <div id="graph" style="text-align: center;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<!--/Body-->
+
+<!--Footer-->
+    <footer id="footer" class="pb-4 pt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg">
+                    <p>
+                        Hecho por: Paulo Cesar Hernández Rosado
+                    </p>
+                </div>
+                <div class="col-12 col-lg">
+                    <p>
+                        Matematicas Discretas
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<!--Footer-->
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="//d3js.org/d3.v4.min.js"></script>
+    <script src="https://unpkg.com/viz.js@1.8.0/viz.js" type="javascript/worker"></script>
+    <script src="https://unpkg.com/d3-graphviz@1.3.1/build/d3-graphviz.min.js"></script>
+    <script src="js/script.js"></script>
+
+</html>
