@@ -89,17 +89,23 @@
                             </select>
                             <button type="button" class="btn btn-outline-secondary" id="agregarLetra">Agregar letra</button>
                             <span class="visually-hidden">Toggle Dropdown</span>
-                            <input type="text" class="form-control" aria-label="Text input with segmented dropdown button" disabled id="cadena">
+                            <input type="text" class="form-control" aria-label="Text input with segmented dropdown button" id="cadena" disabled maxlength="4">
                         </div>
+                        <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btn-check-outlined">Empezar diagrama de transición</label><br>
 
                     </article>
                 </div>
-                <div class="col-12 col-lg-4">
-                    <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
-                    <label class="btn btn-outline-primary" for="btn-check-outlined">Empezar diagrama de transición</label><br>
-                </div>
                 <div class="col-12 col-lg">
-                    <div id="graph" style="text-align: center;"></div>
+                    <lebel id = "lebel1"></lebel>
+                    <hr>
+                    <div id="graph1" style="text-align: center;"></div>
+                    <lebel id = "lebel2"></lebel>
+                    <hr>
+                    <div id="graph2" style="text-align: center;"></div>
+                    <lebel id = "lebel3"></lebel>
+                    <hr>
+                    <div id="graph3" style="text-align: center;"></div>
                 </div>
             </div>
         </div>
