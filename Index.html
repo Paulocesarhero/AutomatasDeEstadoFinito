@@ -49,13 +49,13 @@
                     <aside>
                         <ul>
                             <li>
-                                conjunto finito de símbolos entrada <var>I</var>
+                                conjunto finito de símbolos entrada <var>I = {a,b,c}</var>
                             </li>
                             <li>
-                                Conjunto finito símbolos salida <var>o</var>
+                                Conjunto finito símbolos salida <var>o = {0,1}</var>
                             </li>
                             <li>
-                                Conjunto finito estados <var>S</var>
+                                Conjunto finito estados <var>S = {e0, e1}</var>
                             </li>
                             <li>
                                 Una función de estado siguiente <var>f:SxI→S</var>
@@ -64,7 +64,7 @@
                                 Una función de salida <var>G:SxI→O</var>
                             </li>
                             <li>
-                                Un estado inicial <var>So</var>
+                                Un estado inicial <var>So = e0</var>
                             </li>
 
                         </ul>
@@ -93,7 +93,9 @@
                         </div>
                         <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
                         <label class="btn btn-outline-primary" for="btn-check-outlined">Empezar diagrama de transición</label><br>
+                        <p id="pInformativo">
 
+                        </p>
                     </article>
                 </div>
                 <div class="col-12 col-lg">
@@ -107,6 +109,73 @@
                     <hr>
                     <div id="graph3" style="text-align: center;"></div>
                 </div>
+            </div>
+
+<!--            Aqui comienza e ejemplo 2-->
+            <div class="row">
+                <div class="col-12 col-lg">
+                    <aside>
+                        <ul>
+                            <li>
+                                conjunto finito de símbolos entrada cambiaremos 5 por a y 10 por b <var>I = {5$,10$}</var>
+                            </li>
+                            <li>
+                                Conjunto finito símbolos salida <var>o = {0,1}</var>
+                            </li>
+                            <li>
+                                Conjunto finito estados <var>S = {e0, e1, e2, e3}</var>
+                            </li>
+                            <li>
+                                Una función de estado siguiente <var>f:SxI→S</var>
+                            </li>
+                            <li>
+                                Una función de salida <var>G:SxI→O</var>
+                            </li>
+                            <li>
+                                Un estado inicial <var>So = e0</var>
+                            </li>
+                        </ul>
+                    </aside>
+                </div>
+                <div class="col-12 col-lg text-center">
+                    <article class="color1">
+                        <p>
+                            En este automata acepta 10$ con monedas de 5 y de 10
+                        </p>
+                        <h2>Intetalo tu mismo agrega monedas del conjunto de entrada en el siguiente apartado</h2>
+                        <div class="input-group mb-3">
+                            <select class="form-select" id="inputGroupSelect02">
+                                <option value="1">5$</option>
+                                <option value="2">10$</option>
+                            </select>
+                            <button type="button" class="btn btn-outline-secondary" id="agregarpesos">Agregar moneda</button>
+                            <span class="visually-hidden">Toggle Dropdown</span>
+                            <input type="text" class="form-control" aria-label="Text input with segmented dropdown button" id="pesos" disabled maxlength="4">
+                        </div>
+                        <input class="btn btn-primary" type="submit" value="Empezar diagrama de transición" id="iniciarsegungoEjemplo">
+                        <p id="pInformativo1">
+
+                        </p>
+                    </article>
+                    <div class="col-12 col-lg">
+                        <lebel id = "lebele"></lebel>
+                        <hr>
+                        <div id="grapho" style="text-align: center;"></div>
+                        <lebel id = "lebele1"></lebel>
+                        <hr>
+                        <div id="grapho1" style="text-align: center;"></div>
+                        <lebel id = "lebele2"></lebel>
+                        <hr>
+                        <div id="grapho2" style="text-align: center;"></div>
+                        <lebel id = "lebele3"></lebel>
+                        <hr>
+                        <div id="grapho3" style="text-align: center;"></div>
+                        <lebel id = "lebele4"></lebel>
+                        <hr>
+                        <div id="grapho4" style="text-align: center;"></div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
